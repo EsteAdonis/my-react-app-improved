@@ -1,8 +1,11 @@
-import PropTypes from 'prop-types';
+// conditional rendering = allows you to control what gets rendered
+//                         in your application based on certain conditions
+//                         (show, hide, or change components)
 
+import PropTypes from 'prop-types';
 import styles from './UserGreeting.module.css';
 
-function UserGreeting(props) {
+export default function UserGreeting(props) {
 
   const welcomeMessage = <h2 className={styles.welcome}>Welcome {props.username}</h2>;
   const loginPrompt = <h2 className={styles.login}>Please log in to continue</h2>;
@@ -22,4 +25,4 @@ UserGreeting.defaultProps = {
   username: "Guest",
 }
 
-export default UserGreeting
+// export default UserGreeting
