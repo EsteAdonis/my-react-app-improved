@@ -2,8 +2,7 @@
 //            ex. <input>, <textarea>, <select>, <radio>
 //            Trigger a function every time the value of the input changes
 
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function MyComponent() {
   const [name, setName] = useState("Guest");
@@ -48,7 +47,9 @@ function MyComponent() {
         <option value="">Select an option</option>
         <option value="Visa">Visa</option>
         <option value="MasterCard">MasterCard</option>
-        <option value="GirtCard">GirtCard</option>        
+        <option value="GirtCard">GirtCard</option> 
+        <option value="Paypal">Pay pal</option>
+        <option value="MercadoPago">Mercado pago</option>
       </select>
       <p>Payment: {payment}</p>
 

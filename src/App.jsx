@@ -10,15 +10,15 @@
 // import List from './List/List';
 // import Button from './ClickEvents-Button/Button';
 // import ProfilePicture from './ProfilePicture/ProfilePicture'
+// import Counter from './Counter/Counter';
+import MyComponent from './MyComponent/MyComponent';
 
-import Counter from './Counter/Counter';
 
 function App() {
   
   return (
     <>
-      <Counter />
-
+        <MyComponent />
     </>
   )
 }
