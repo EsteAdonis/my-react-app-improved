@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function ColorPiker() {
+function ColorPicker() {
   const [color, setColor] = useState("#FFFFFF");
 
   function handleColorChange(event) {
@@ -9,15 +9,14 @@ function ColorPiker() {
 
   return (
     <div className="color-picker-container">
-      <h1>Color Picker
-        <div className="color-display" style={{ backgroundColor: color }}>
-          <p>Selected Color: {color}</p>
-        </div>
-        <label>Select a Color:</label>
-        <input type="color" value={color} onChange={handleColorChange}></input>
-      </h1>
+      <h1>Color Picker</h1>
+      <div className="color-display" style={{ backgroundColor: color }}>
+        <p>Selected Color: {color}</p>
+      </div>
+      <label>Select a Color:</label>
+      <input type="color" value={color} onChange={handleColorChange}></input>
     </div>
   )
 }
 
-export default ColorPiker
+export default ColorPicker

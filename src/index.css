@@ -94,14 +94,19 @@ h1 {
 
 .color-display {
   width: 300p;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid hsl(0, 0%, 80%);
+  border: 6px solid hsl(0, 0%, 80%);
   border-radius: 25px;
   margin-bottom: 25px;
+  padding: 0 5em;
   transition: 0.35s ease;
+  p {
+    font-family: Arial;
+    font-size: 2em !important;
+  }
 }
 
 .color-display p {
@@ -111,13 +116,14 @@ h1 {
 }
 
 label {
-  font-size: 1.5rem;
+  font-family: monospace;
+  font-size: 1.9rem;
   font-weight: bold;
   margin-bottom:10px;
 }
 
 input[type="color"] {
-  width: 75px;
+  width: 100px;
   height: 50px;
   padding: 5px;
   border-radius: 10px;

@@ -11,14 +11,15 @@
 // import Button from './ClickEvents-Button/Button';
 // import ProfilePicture from './ProfilePicture/ProfilePicture'
 // import Counter from './Counter/Counter';
-import MyComponent from './MyComponent/MyComponent';
-
+// import MyComponent from './MyComponent/MyComponent';
+import ColorPicker from './ColorPicker/ColorPicker';
 
 function App() {
-  
+
   return (
     <>
-        <MyComponent />
+
+        <ColorPicker />
     </>
   )
 }
