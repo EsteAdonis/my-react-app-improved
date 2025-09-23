@@ -6,6 +6,7 @@
 // import Button from './Button/Button';
 // import Card from './Card/Card';
 import Student from './Student/Student';
+import UserGreeting from './UserGreetings/UserGreeting';
 
 function App() {
   // function handleInput(e) {
@@ -18,11 +19,16 @@ function App() {
 
 
       {/* <Button />
-      <Card /> */}
+      <Card /> 
 
       <Student name="Adonis" age={62} isStudent={true} />
       <Student name="Poseidon" age={72} isStudent={false} />
-      <Student />
+      <Student />*/}
+
+      <UserGreeting isLoggedIn={false} username='Prometeo' />
+
+
+
       {/* <Stopwatch /> */}
       {/* <Textarea
         showPlaceholder={false}
