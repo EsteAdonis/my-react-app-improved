@@ -1,0 +1,31 @@
+name: Deploying My React App
+run-name: ${{github.actor}} is testing out GitHub Actions
+
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  Explore-GitHub-Acctions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18.18.0'
+      
+      - name: Installing Dependencies
+        run: npm i --no-audit --no-fund --no-optional
+
+      # - name: Lint
+      #   run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm test
