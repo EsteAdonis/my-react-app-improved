@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function UpdateStateWithArray() {
   const [foods, setFoods] = useState(["Apple", "Orange", "Banana"]);
@@ -12,7 +12,7 @@ function UpdateStateWithArray() {
   function handlerRemoveFood(index) {
     setFoods(foods.filter((_, i) => i != index ))
   }
-  
+
   return (
     <div>
       <h2>List of Food</h2>
