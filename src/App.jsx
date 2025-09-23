@@ -25,7 +25,7 @@ function App() {
       <Student name="Poseidon" age={72} isStudent={false} />
       <Student />*/}
 
-      <UserGreeting isLoggedIn={false} username='Prometeo' />
+      <UserGreeting isLoggedIn={true} username='Prometeo' />
 
 
 
