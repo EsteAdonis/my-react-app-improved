@@ -4,7 +4,15 @@
 //                    Used with multiple state updates and asynchronous functions
 //                    Good practice to use updater functions.
 
-import React, { useState } from 'react';
+// React hook = Special function that allows function components to use React feacture
+//              without writing class components (React v16.8)
+//              (useState, useEffect, useContext, useReducer, useCallback and more)
+
+// useState() = A React hook that a allows the creation of stateful variable AND a setter function
+//              to update its value in the Virtual DOM.
+//              [name, setName]
+
+import  { useState } from 'react';
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -31,8 +39,6 @@ function Counter() {
       <button className="counter-button" onClick={reset}>Reset</button>      
       <button className="counter-button" onClick={increment}>Increment</button>      
     </div>
-
-
   )
 }
 

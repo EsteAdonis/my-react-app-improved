@@ -8,16 +8,16 @@
 // import Student from './Student/Student';
 // import UserGreeting from './UserGreetings/UserGreeting';
 // import List from './List/List';
-import Button from './ClickEvents-Button/Button';
-import ProfilePicture from './ProfilePicture/ProfilePicture'
+// import Button from './ClickEvents-Button/Button';
+// import ProfilePicture from './ProfilePicture/ProfilePicture'
+
+import Counter from './Counter/Counter';
 
 function App() {
-
+  
   return (
     <>
-
-      <Button />
-      <ProfilePicture />
+      <Counter />
 
     </>
   )
