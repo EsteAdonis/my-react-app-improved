@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function UpdateState() {
   const [car, setCar] = useState({ year: 2024, make: "Mazda", model: "cx-5" });
@@ -24,8 +24,6 @@ function UpdateState() {
       <input type="text" value={car.model} onChange={handleModelChange} /> <br />            
       
     </div>      
-  
-  
   )
 }
 
