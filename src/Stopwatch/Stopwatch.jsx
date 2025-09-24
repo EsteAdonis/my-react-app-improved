@@ -6,7 +6,7 @@
 // useEffect(function, [dependencies])
 
 // 1. useEffect(() => {})           // Runs after every re-render
-// 2. useEffect(() => {}, [])           // Runs only on mount
+// 2. useEffect(() => {}, [])       // Runs only on mount
 // 3. useEffect(() => {}, [value])  // Runs on mount + when values changes
 
 // USES
@@ -19,7 +19,6 @@
 import {useState, useEffect, useRef } from 'react';
 
 function Stopwatch() {
-
   const [isRunning, setIsRunning] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
   const intervalIdRef = useRef(null);

@@ -22,41 +22,7 @@
 function App() {
   return (
     <>
-      {/* <Otp length={4} size={'lg'} /> */}
-      {/* 
-        <Button />
-        <Card /> 
-        <Student name="Adonis" age={62} isStudent={true} />
-        <Student name="Poseidon" age={72} isStudent={false} />
-        <Student />
-        <UserGreeting isLoggedIn={true} username='Prometeo' /> 
-      
-        {fruits.length > 0 && <List items={fruits} category='Fruits'/> }
-        {vegtables.length > 0 && <List items={vegtables} category='Vegtables'/> }
-
-        <Button />
-        <ProfilePicture />
-         <Counter />
-        <MyComponent />         
-        <ColorPicker />
-        <UpdateState />        
-        <UpdateStateWithArray />     
-        <ToDoList />
-        <DigitalClock />
-        <ComponentA />        
-      */}
-
-      {/* <Stopwatch /> */}
-      {/* <Textarea
-        showPlaceholder={false}
-        textPlaceholder='Greetings Julio Esteban'
-        readOnly={false}
-        error={false}
-        value={handleInput}
-      /> */}
-
-      {/* <Input />
-      <ChangeBackgroundColor /> */}
+      <Stopwatch />
     </>
   )
 }
