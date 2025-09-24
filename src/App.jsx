@@ -15,13 +15,13 @@
 // import ColorPicker from './ColorPicker/ColorPicker';
 // import UpdateState from './Update-State/UpdateState';
 // import UpdateStateWithArray from './Update-State-With-Array/UpdateStateWithArray';
-import ToDoList from './ToDoList/ToDoList';
+// import ToDoList from './ToDoList/ToDoList';
+import DigitalClock from './DigitalClock/DigitalClock';
 
 function App() {
-  
   return (
     <>
-      <ToDoList />
+        <DigitalClock />
     </>
   )
 }

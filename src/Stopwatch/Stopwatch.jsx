@@ -1,5 +1,22 @@
-import React, {useState, useEffect, useRef } from 'react';
+// useEffect() = React Hook that tell React DO SOME CODE WHEN (pick one):
+//               This component re-renders
+//               This component mounts
+//               The state of a value
 
+// useEffect(function, [dependencies])
+
+// 1. useEffect(() => {})           // Runs after every re-render
+// 2. useEffect(() => {}, [])           // Runs only on mount
+// 3. useEffect(() => {}, [value])  // Runs on mount + when values changes
+
+// USES
+// #1 Event Listeners
+// #2 DOM manipulation
+// #3 Subscriptions (real-time updates)
+// #4 Fetching Date from an API
+// #5 Clean up when components unmounts
+
+import {useState, useEffect, useRef } from 'react';
 
 function Stopwatch() {
 
@@ -9,8 +26,6 @@ function Stopwatch() {
   const startTimeRef = useRef(0);
 
   useEffect(() => {
-    
-
     if (isRunning) {
       intervalIdRef.current = setInterval(() => {
         setElapsedTime(Date.now() - startTimeRef.current )
