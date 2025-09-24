@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { UserContext } from './ComponentA.jsx';
 
 function ComponentD() {
@@ -10,5 +10,4 @@ function ComponentD() {
     </div>
   )
 }
-
 export default ComponentD

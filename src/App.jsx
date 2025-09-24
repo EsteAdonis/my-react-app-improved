@@ -16,12 +16,13 @@
 // import UpdateState from './Update-State/UpdateState';
 // import UpdateStateWithArray from './Update-State-With-Array/UpdateStateWithArray';
 // import ToDoList from './ToDoList/ToDoList';
-import DigitalClock from './DigitalClock/DigitalClock';
+// import DigitalClock from './DigitalClock/DigitalClock';
+import  ComponentA from "./UseContext/ComponentA";
 
 function App() {
   return (
     <>
-        <DigitalClock />
+      <ComponentA />
     </>
   )
 }

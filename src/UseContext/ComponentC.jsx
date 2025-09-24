@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { UserContext } from './ComponentA.jsx';
 import ComponentD from "./ComponentD"
-
 
 function ComponentC() {
   const user = useContext(UserContext);

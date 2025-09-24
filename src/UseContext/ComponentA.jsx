@@ -14,14 +14,12 @@
 //    import { MyContext } from './ComponentA';
 // 2. const value = useContext(MyContext);
 
-
-import React, { useState, createContext } from 'react';
+import { useState, createContext } from 'react';
 import ComponentB from "./ComponentB"
 
 export const UserContext = createContext();
 
 function ComponentA() {
-
   const [user, setUser] = useState("Adonis Julio Esteban");
 
   return (
@@ -30,9 +28,8 @@ function ComponentA() {
       <h2><b>{`Hello ${user}`}</b></h2>
 
       <UserContext.Provider value={user}>
-        <ComponentB user={user}/>
+        <ComponentB />
       </UserContext.Provider>
-
     </div>
   )
 }
